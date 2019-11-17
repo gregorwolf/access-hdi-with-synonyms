@@ -1,0 +1,14 @@
+{
+  "hdi_db_without_xsa": {
+    "object_owner": {
+      "container_roles":[
+        "opensap::ReadOnly#"
+      ]
+    },
+    "application_user": {
+      "container_roles":[
+        "opensap::ReadOnly"
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+	"TABLE_COLUMNS": {
+		"target": {
+			"object": "TABLE_COLUMNS",
+			"schema": "SYS"
+		}
+	},
+	"OPENSAP_PURCHASEORDER_BUSINESSPARTNER": {
+		"target": {
+			"schema.configure": "hdi_db_without_xsa/schema",
+			"object": "OPENSAP_PURCHASEORDER_BUSINESSPARTNER"
+		}
+	},
+	"OPENSAP_PURCHASEORDER_HEADERS": {
+		"target": {
+			"schema.configure": "hdi_db_without_xsa/schema",
+			"object": "OPENSAP_PURCHASEORDER_HEADERS"
+		}
+	},
+	"OPENSAP_PURCHASEORDER_ITEMS": {
+		"target": {
+			"schema.configure": "hdi_db_without_xsa/schema",
+			"object": "OPENSAP_PURCHASEORDER_ITEMS"
+		}
+	}
+}

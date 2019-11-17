@@ -1,0 +1,65 @@
+{
+  "TARGET_CONTAINER": "ACCESS_HDI_WITH_SYNONYM",
+  "VCAP_SERVICES": {
+    "hana": [
+      {
+        "name": "ACCESS_HDI_WITH_SYNONYM",
+        "label": "hana",
+        "tags": [
+          "hana",
+          "database",
+          "relational"
+        ],
+        "plan": "hdi-shared",
+        "credentials": {
+          "schema": "ACCESS_HDI_WITH_SYNONYM",
+          "hdi_password": "<password>",
+          "tenant_name": "HXE",
+          "password": "<password>",
+          "driver": "com.sap.db.jdbc.Driver",
+          "port": "30015",
+          "encrypt": false,
+          "db_hosts": [
+            {
+              "port": 30015,
+              "host": "hanapm.local.com"
+            }
+          ],
+          "host": "hanapm.local.com",
+          "hdi_user": "ACCESS_HDI_WITH_SYNONYM_DF0100E0D7B619E51600A800D76B1848_DT",
+          "user": "ACCESS_HDI_WITH_SYNONYM_DF0100E0D7B619E51600A800D76B1848_RT",
+          "url": "jdbc:sap://hanapm.local.com:30015/?currentschema=ACCESS_HDI_WITH_SYNONYM"
+        }
+      },
+      {
+				"name": "hdi_db_without_xsa",
+				"label": "hana",
+				"tags": [
+					"hana",
+					"database",
+					"relational"
+				],
+				"plan": "hdi-shared",
+				"credentials": {
+					"schema": "HDI_WITHOUT_XSA",
+					"hdi_password": "<password>",
+					"tenant_name": "HXE",
+					"password": "<password>",
+					"driver": "com.sap.db.jdbc.Driver",
+					"port": "30015",
+					"encrypt": false,
+					"db_hosts": [
+						{
+							"port": 30015,
+							"host": "hanapm.local.com"
+						}
+					],
+					"host": "hanapm.local.com",
+					"hdi_user": "HDI_WITHOUT_XSA_CF0100E0D7B619E51600A800D76B1848_DT",
+					"user": "HDI_WITHOUT_XSA_CF0100E0D7B619E51600A800D76B1848_RT",
+					"url": "jdbc:sap://hanapm.local.com:30015/?currentschema=HDI_WITHOUT_XSA"
+				}
+			}
+    ]
+  }
+}
