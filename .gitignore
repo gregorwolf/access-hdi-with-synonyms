@@ -76,3 +76,4 @@ typings/
 .fusebox/
 
 default-env.json
+db/default-env.json
